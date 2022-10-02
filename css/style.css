@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #36384C;
+}
+.container {
+  z-index: 1;
+  width: 80%;
+  margin:  auto;
+    border-radius: 15px;
+    background: #849974;
+    padding: 2%;
+    box-shadow: 15px 15px 2px #613A43;
+}
+.board {
+    column-count: 3;
+    column-gap: 1rem;
+}
+.container h2 {
+    margin: 0 0 30px;
+    text-align: center;
+}
+.fontCountry {
+  font-size: 1rem;
+  text-align: left;
+  font-family: poppins;
+  color: black;
+}
+.fontDate {
+  padding-top: 2%;
+  font-size: large;
+  text-align: left;
+  font-family: poppins;
+  color: black;
+}
+.card {
+    width: 84%;
+    background: #ccc;
+    padding: auto;
+    margin:auto;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+}
+.card.ac {
+    background: #056e4f;
+}
+.card.nc {
+    background: #05966b;
+}
+.card.rc {
+    background: #54cc9c;
+}
+.card.tc {
+    background: #82dab0;
+}
+.card.td {
+    background: #abe8c6;
+}
+.card.tt {
+    background: #d2f6dc;
+}
+.card h5 {
+    margin: auto;
+    font-size: 2rem;
+}
+.card span {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.card i {
+    font-size: 3rem;
+}
+@media screen and (max-width: 768px){
+  .board {
+    column-count: 2;
+  }
+  .card span {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .board {
+    column-count: 1;
+  }
+}
